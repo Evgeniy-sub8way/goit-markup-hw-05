@@ -772,9 +772,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  position: absolute;
-  top: 0;
-  right: 21px;
 }
 
 .label-link {
@@ -788,9 +785,6 @@ img {
   fill: transparent;
   width: 16px;
   height: 16px;
-  position: absolute;
-  left: -22px;
-  top: -2px;
   margin-right: 8px;
   display: inline-flex;
   justify-content: center;

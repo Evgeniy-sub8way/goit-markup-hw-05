@@ -644,7 +644,8 @@ img {
   border-radius: 50%;
   width: 24px;
   height: 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn:hover,
@@ -695,6 +696,9 @@ img {
   height: 40px;
   padding-left: 38px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  outline: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .wrap-input-icon {
@@ -733,6 +737,12 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 8px 16px;
   resize: none;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  outline: transparent;
 }
 
 .text-area::placeholder {
@@ -803,11 +813,9 @@ img {
 }
 
 .send-btn {
-  position: absolute;
+  display: block;
   cursor: pointer;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
   border: none;
   border-radius: 4px;
   padding-block: 16px;
@@ -822,7 +830,8 @@ img {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .send-btn:hover,
